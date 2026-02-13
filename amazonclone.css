@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #131921;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+}
+
+.small {
+    font-size: 12px;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Search Bar */
+.nav-search {
+    display: flex;
+    width: 50%;
+}
+
+.nav-search input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    outline: none;
+}
+
+.nav-search button {
+    padding: 8px 12px;
+    background-color: #febd69;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-search button:hover {
+    background-color: #f3a847;
+}
+
+/* Right Section */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cart {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Banner */
+.banner {
+    background-color: #eaeded;
+    text-align: center;
+    padding: 50px;
+}
+
+.banner h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* Products */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+.product {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.product img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+}
+
+.product h3 {
+    margin: 10px 0 5px;
+}
+
+.product h4 {
+    color: #b12704;
+    margin-bottom: 10px;
+}
+
+/* Add to Cart Button */
+.product button {
+    background-color: #ffd814;
+    border: 1px solid #fcd200;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.product button:hover {
+    background-color: #f7ca00;
+    transform: scale(1.05);
+}
+
+.product button:active {
+    background-color: #e6b800;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
